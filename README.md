@@ -63,9 +63,16 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database* |     |              |
-| *Azure Service Bus*   |         |              |
-| ...                   |         |              |
+| *Azure Postgres Database*           | Basic        |   $35.52     |
+| *Azure Service Bus*                 | Basic        |   $0.00      |
+| *Azure Storage Account*             | Standard     |   $1.56      |
+| *Azure Function App*                | Consumption  |   $0.00      |
+| *Azure Web App*                     | F1(Free)     |   $0.00      |
+| *SendGrid*                          | Free Account |   $0.00      |
+| *Total*                             |              |   $37.08     |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+
+- The application has not reached the limit of Web App Service, so we can use this service instead of the VM. Web App Service make it easy to deploy applications instead of spending alot of time configuring on the VM. Also, Web App Service is cheaper than VM.
+- We use Azure function (Service Bus Queue) to easily solve the performance issue of sending email to all conference attendees without timeout or worse, application down. Also, Azure function is pay-as-you-go, so we only pay when we are using this service.
