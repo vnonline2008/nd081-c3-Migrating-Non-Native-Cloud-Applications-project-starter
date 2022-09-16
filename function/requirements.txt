@@ -1,0 +1,6 @@
+azure-functions==1.11.2
+psycopg2==2.9.3
+psycopg2-binary==2.9.3
+python-http-client==3.3.7
+sendgrid==6.9.7
+starkbank-ecdsa==2.0.3

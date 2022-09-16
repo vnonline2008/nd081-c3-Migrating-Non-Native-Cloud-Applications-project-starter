@@ -142,3 +142,8 @@ cython_debug/
 # macOS
 .DS_Store
 *.sh
+
+.python_packages
+local.settings.json
+host.json
+.vscode
