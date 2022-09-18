@@ -63,13 +63,13 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database*           | Basic        |   $35.52     |
-| *Azure Service Bus*                 | Basic        |   $0.00      |
-| *Azure Storage Account*             | Standard     |   $1.56      |
-| *Azure Function App*                | Consumption  |   $0.00      |
-| *Azure Web App*                     | F1(Free)     |   $0.00      |
-| *SendGrid*                          | Free Account |   $0.00      |
-| *Total*                             |              |   $37.08     |
+| *Azure Postgres Database*           | General Purpose |   $138.47    |
+| *Azure Service Bus*                 | Standard        |   $9.81      |
+| *Azure Storage Account*             | Standard        |   $1.56      |
+| *Azure Function App*                | Consumption     |   $0.00      |
+| *Azure Web App*                     | Standard (S2)   |   $138.70    |
+| *SendGrid*                          | Free Account    |   $0.00      |
+| *Total*                             |                 |   $288.54    |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
